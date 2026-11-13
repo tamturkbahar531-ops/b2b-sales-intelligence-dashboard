@@ -5,7 +5,6 @@ from pathlib import Path
 
 st.set_page_config(
     page_title="B2B Sales Intelligence",
-    page_icon="📊",
     layout="wide"
 )
 
