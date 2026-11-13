@@ -20,7 +20,7 @@ def load_data():
 
 df, rfm = load_data()
 
-st.title("📊 B2B Sales Intelligence")
+st.title("B2B Sales Intelligence")
 st.caption("Sales, Marketing & Supply Chain Decision Support | 2020")
 
 # SIDEBAR FILTERS
@@ -66,10 +66,10 @@ units = filtered["Quantity"].sum()
 aov = revenue / orders if orders else 0
 
 tab1, tab2, tab3, tab4 = st.tabs([
-    "📈 Sales Overview",
-    "📚 Product Analytics",
-    "👥 Customer Intelligence",
-    "🚚 Supply Chain"
+    "Sales Overview",
+    "Product Analytics",
+    "Customer Intelligence",
+    "Supply Chain"
 ])
 
 with tab1:
@@ -235,7 +235,7 @@ st.caption(
 
 # FORECASTING SECTION
 st.divider()
-st.header("🔮 Sales Forecasting")
+st.header("Sales Forecasting")
 
 forecast_df = pd.read_parquet(
     BASE_DIR / "sales_forecast.parquet"
